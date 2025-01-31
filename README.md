@@ -1,4 +1,5 @@
 # Customer Support System for National Exam Board (NECTA)
+
 A CRM application designed for an National Examination Council of Tanzania (NECTA) to manage school support efficiently.
 
 ## Overview
@@ -17,3 +18,25 @@ The National Exam Board requires a system to manage customer support requests fr
   - **Support Agents:** Handle support requests from assigned regions.
   - **Admins:** Manage support agents and handle escalated issues.
 - **Timely Resolution:** Ensures quick response and resolution to maintain customer satisfaction.
+
+### User Roles, Permissions and Responsibilities
+
+#### Responsibilities By Role
+
+| **User Role** | **Responsibilities** |
+|--------------|----------------------|
+| **School Users** | Report issues (tickets), track status, receive notifications. |
+| **Support Agents** | Handle tickets within their region, escalate if needed, communicate with schools. |
+| **Admins (Exam Board Staff)** | Maanage users, Oversee all tickets, assign agents, handle escalations, monitor performance. |
+
+#### Permissions by Role
+
+| Action | School User | Support Agent | Admin |
+|--------|------------|---------------|-------|
+| Create a ticket | ✅ | ❌ | ❌ |
+| View own tickets | ✅ | ✅ (assigned only) | ✅ (all) |
+| Update ticket status | ❌ | ✅ | ✅ |
+| Assign/reassign tickets | ❌ | ❌ | ✅ |
+| Escalate tickets | ❌ | ✅ (to admin) | ✅ |
+| Manage support agents | ❌ | ❌ | ✅ |
+| View reports & analytics | ❌ | ❌ | ✅ |
